@@ -1,0 +1,1788 @@
+{
+  "type": "bundle",
+  "id": "bundle--b40ee6ff-8b46-4a13-a9db-193bb9d1ec63",
+  "objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7bc7f66f-b331-4079-9be3-23871bcc5810",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - e56a2ad5f8c76403f87e9f.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6996 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'e56a2ad5f8c76403f87e9f.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--43a43551-bed1-488a-b3ca-57334b38d15e",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 4a9fa76e5abf.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6665 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '4a9fa76e5abf.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5d4fcc3d-3b82-48c7-82de-e8c4ad8145fe",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 4a1ec25f8b12.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6350 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '4a1ec25f8b12.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--bf4d09cd-d302-4652-88c7-dcaf2f0ce8de",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 6140583c0346c5be2d9b9612.evil.net",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.9764 (CRITICAL severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '6140583c0346c5be2d9b9612.evil.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--53fd813d-2ca6-4379-b38f-95573b2fc60b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 8f3a296903e2.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6428 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '8f3a296903e2.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0e308d01-3583-4ed9-b97a-a2982ea7b918",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - c6d8205dc3d3b1b5cbb67fe.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7196 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'c6d8205dc3d3b1b5cbb67fe.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--caaf8fae-8d50-4f2a-a7a3-a636bf74427c",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 8393d63c2b3d4aa.evil.net",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6045 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '8393d63c2b3d4aa.evil.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3bc2cc09-254d-4154-901f-249d3af59535",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - ukr2bfy4x28njify170p.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6610 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ukr2bfy4x28njify170p.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--268c8e90-690f-446b-8fc9-2810fed4c58a",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - isypscj1m.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6333 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'isypscj1m.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--596102af-e9d1-46da-aa53-748b778d0d30",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - s652t7j5o.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6551 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 's652t7j5o.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5770bd1e-75c5-41af-9068-879da343279d",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - acd94bfc1004fab931.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7287 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'acd94bfc1004fab931.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--962e6221-5546-40be-94f8-bf7fbe95fa57",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - fa6a1db7868a5518104944.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7140 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'fa6a1db7868a5518104944.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--294d481d-c2d4-4c81-a0f0-9c17fdb866a1",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - gqeeq4zp8gjju6n37r66.tunnel.io",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6338 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'gqeeq4zp8gjju6n37r66.tunnel.io']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ea5015d6-bf40-4cd2-9741-8456ce74b7b0",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - pqa0cn0k16z.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6315 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'pqa0cn0k16z.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--08626d9c-184b-4482-8691-b19bfc269c98",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - aelhxd935ge1kgolg.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6859 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'aelhxd935ge1kgolg.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f266a605-3813-4586-81f6-c30b264cbd83",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - tfotjpn4m6ixrk29.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7002 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'tfotjpn4m6ixrk29.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f3932515-2e31-4435-af12-e1583637ca63",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - e3eccf9b9ee2e274990f2.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7107 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'e3eccf9b9ee2e274990f2.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--96f74cb0-56bd-481e-8dfe-a42b19b1e2c3",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 672528c4092615a458b.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7748 (HIGH severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '672528c4092615a458b.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--27b90a2a-4b9b-4def-a891-8386009a0f54",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - ce82afc8003b0387a0b92a.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6699 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ce82afc8003b0387a0b92a.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2b131e4e-f79b-4c81-910a-60f4c16fde91",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - tkv10bcbion11km6ybl3.malware.org",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6025 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'tkv10bcbion11km6ybl3.malware.org']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b0926f37-3d5e-4a30-84ed-c10f2b07f285",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - tb6pwbwrptnv3ndh2ej.evil.net",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6076 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'tb6pwbwrptnv3ndh2ej.evil.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--901433ca-4360-4d75-acad-c509d210b4a6",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - f98d14c1e77f109ad3.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7237 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'f98d14c1e77f109ad3.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fe9c4c5b-63dc-4ce9-a7c3-76273200943c",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 6a24d66ff402fb3eeb08.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6652 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '6a24d66ff402fb3eeb08.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7ec98e69-985c-4cac-8d3a-b9402331482b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 1484f241bd46e93fc478.tunnel.io",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6577 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '1484f241bd46e93fc478.tunnel.io']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--88eb842d-b63a-47bb-bed1-c4a9b6224d00",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 6d64f929b2772a7989c7.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7798 (HIGH severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '6d64f929b2772a7989c7.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4a259058-05fe-4eae-b700-cbbd16c79e0b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - mvy8767jg3x48.malware.org",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6016 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'mvy8767jg3x48.malware.org']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a4facc70-48f1-4076-ba0e-44a23c94db33",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 713ec41bb28a110d.evil.net",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6424 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '713ec41bb28a110d.evil.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--08b062cf-cb84-4f7b-840f-a4680f65fea4",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - ern5lch5e6p.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6811 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ern5lch5e6p.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--cfabe0ea-9004-4344-8560-cd210ef9e0a4",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 7ca16533d8c6d0534b2e.evil.net",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6379 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '7ca16533d8c6d0534b2e.evil.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c0cee1a9-822f-47a9-9eaa-93f8c929df49",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - b06a2f31bfc8.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6306 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'b06a2f31bfc8.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--37e6a073-5796-46bd-9cad-0c5bc5ae3965",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - ciwi9fio8mg0dqh9ps8.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6325 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ciwi9fio8mg0dqh9ps8.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7bfb570f-57f2-4201-aa4e-959817418054",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 618e722fa58e63d972a84f7.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6557 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '618e722fa58e63d972a84f7.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e6225295-4159-4ec9-8bda-c0548e9cc029",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 5fdd3ed76d3fe403.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6794 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '5fdd3ed76d3fe403.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c46e96d0-0784-4838-9626-877a4c617537",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 237e5ba403385a91.badsite.com",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6178 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '237e5ba403385a91.badsite.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a663c3e2-56f7-4e69-ad2d-ee1dd16c92ee",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 4341205e5d2bf39b.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6949 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '4341205e5d2bf39b.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d722d9a7-e52f-494e-b60f-b799d7fe0b77",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 0dzbbh5pcgieca4j5nnq.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7211 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '0dzbbh5pcgieca4j5nnq.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d99f5199-2a92-4471-a4b6-5f4e8d14dad9",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 4a71wjdo.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6251 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '4a71wjdo.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d4791e8a-e7b3-4d44-b5b8-039385f4a5a2",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 9478b75f738de1e19e886.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6931 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '9478b75f738de1e19e886.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--47bc2a4c-f556-4ffc-81a7-4a4d8eeff51d",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 418a6ee34489a50.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6470 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '418a6ee34489a50.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3e555896-03f2-4f32-af0b-d58b57ae6e5e",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - ya820z6hi.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6364 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'ya820z6hi.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--874f129f-67f6-4160-80c0-4aa5b84a6bda",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - any5vchsjef2m48myhkh.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6792 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'any5vchsjef2m48myhkh.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--70908906-489b-4aa1-a633-847d22825db0",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - f7e2e81940106d9a1a71.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6687 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'f7e2e81940106d9a1a71.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--45c254ad-7882-45d9-acdf-228ba521b707",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 3d74d03168b29e.badsite.com",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6477 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '3d74d03168b29e.badsite.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1fcd9f11-6299-48d1-99e5-fe6c062aad1a",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - b797a7d2e40.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6798 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'b797a7d2e40.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b49e2667-2b73-4d68-a191-844159acd1d1",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 8498b0f2ab07a210421c.phishing.cn",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6932 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '8498b0f2ab07a210421c.phishing.cn']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--adca757b-7122-4934-abc0-9397aa282869",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - n27yf9c9ub60skb.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6970 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'n27yf9c9ub60skb.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--88972156-008b-4f97-9fae-8940ce8c559b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 25208796af698701995.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7118 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '25208796af698701995.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1bcf2d64-bac3-4ea9-a255-49ca51dfb547",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 590054c12abfa34b808.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7160 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '590054c12abfa34b808.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fbab4f3e-b1f9-4358-a996-fbdc1d98a01b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - qz698cto3.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6492 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'qz698cto3.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5cc83389-aead-400f-91b6-73438925481b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 245c69d17ab05a20c285.malware.org",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6599 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '245c69d17ab05a20c285.malware.org']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d3bf763b-a94a-4eea-8dde-ff7dc81dce2d",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - c66cb05541.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7364 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'c66cb05541.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0e359172-6358-4da1-84d0-64104df06b5f",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - a549a03a9a3e913.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6861 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'a549a03a9a3e913.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b91b9afc-a070-42dc-a1b9-db76be5c37fa",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 6nizmzwfdbmbykj0ibd.tunnel.io",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6054 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '6nizmzwfdbmbykj0ibd.tunnel.io']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d599b4d4-6fd9-4ef8-9819-9ea128d0da8b",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 9cdd66f93078d3158934.tunnel.io",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6479 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '9cdd66f93078d3158934.tunnel.io']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--79df8edc-180c-411c-a252-058ad5084384",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - d50b1a0d63919e5e64347c5d.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 1.0000 (CRITICAL severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'd50b1a0d63919e5e64347c5d.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d1bf0412-c7e2-48b8-8bf1-d5772b5a2373",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - hrxfh0u58pk4mjkk.exfil.top",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7215 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'hrxfh0u58pk4mjkk.exfil.top']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--80e2a053-3e75-4799-b399-9bb3bff35406",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - loygnoekssyioak0yvv.darkweb.biz",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6187 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'loygnoekssyioak0yvv.darkweb.biz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3a315756-df63-43ae-afc5-52816d2e18ff",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - f0cc3d1280eb433cb6fb35a5.botnet.pw",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 1.0000 (CRITICAL severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'f0cc3d1280eb433cb6fb35a5.botnet.pw']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9dd8f1e8-0628-401b-9809-4caf7dfcc185",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - y2vj37b222sf.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6367 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'y2vj37b222sf.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a7e3c185-fc2a-48be-b183-b4ffea1c5bbe",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - f652yr255dijxa35ii3.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6426 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'f652yr255dijxa35ii3.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--db391af0-a06f-4107-bb04-538681c9f62c",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - qxa3e3u61mpzga8d3.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7807 (HIGH severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'qxa3e3u61mpzga8d3.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7f7b802e-37bc-44eb-a72d-af233f9e11fa",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 71b87ed357125b73ad.c2server.ru",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6354 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '71b87ed357125b73ad.c2server.ru']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4090d90b-eade-4775-b85b-a435eaa0f248",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - f5200a9dd6c14042df.malware.org",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6426 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'f5200a9dd6c14042df.malware.org']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4572b8e6-58cf-4c22-82fa-bf575fa4391d",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - qv1ht5z8b.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6516 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = 'qv1ht5z8b.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d45e4fd4-cefb-4c4b-b3ed-edfc6e69a4d6",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 1002a4c115df.dga.tk",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.7005 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '1002a4c115df.dga.tk']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f99a8a35-8b9c-45fa-b7b2-879d40f9d1db",
+      "created": "2026-10-31T15:11:44Z",
+      "modified": "2026-10-31T15:11:44Z",
+      "name": "Malicious DNS Activity - 3685674d7d73ad3808ff.badsite.com",
+      "description": "Statistical DNS Anomaly Detector flagged domain with score 0.6268 (MEDIUM severity).",
+      "indicator_types": [
+        "anomalous-activity"
+      ],
+      "pattern": "[domain-name:value = '3685674d7d73ad3808ff.badsite.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-31T15:11:44Z",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1568.002",
+          "url": "https://attack.mitre.org/techniques/T1568/002/"
+        },
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1071.004",
+          "url": "https://attack.mitre.org/techniques/T1071/004/"
+        }
+      ]
+    }
+  ]
+}

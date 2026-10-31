@@ -1,0 +1,73 @@
+# Windows PowerShell Defense Script
+# Generated: 2026-10-31 20:41:44
+Write-Host '[*] Applying DNS sinkhole to hosts file and firewall...' -ForegroundColor Cyan
+ $HostsPath = Join-Path $env:SystemRoot "System32\drivers\etc\hosts"
+
+Add-Content -Path $HostsPath -Value '0.0.0.0 e56a2ad5f8c76403f87e9f.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 4a9fa76e5abf.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 4a1ec25f8b12.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 6140583c0346c5be2d9b9612.evil.net' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 8f3a296903e2.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 c6d8205dc3d3b1b5cbb67fe.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 8393d63c2b3d4aa.evil.net' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 ukr2bfy4x28njify170p.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 isypscj1m.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 s652t7j5o.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 acd94bfc1004fab931.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 fa6a1db7868a5518104944.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 gqeeq4zp8gjju6n37r66.tunnel.io' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 pqa0cn0k16z.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 aelhxd935ge1kgolg.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 tfotjpn4m6ixrk29.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 e3eccf9b9ee2e274990f2.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 672528c4092615a458b.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 ce82afc8003b0387a0b92a.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 tkv10bcbion11km6ybl3.malware.org' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 tb6pwbwrptnv3ndh2ej.evil.net' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 f98d14c1e77f109ad3.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 6a24d66ff402fb3eeb08.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 1484f241bd46e93fc478.tunnel.io' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 6d64f929b2772a7989c7.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 mvy8767jg3x48.malware.org' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 713ec41bb28a110d.evil.net' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 ern5lch5e6p.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 7ca16533d8c6d0534b2e.evil.net' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 b06a2f31bfc8.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 ciwi9fio8mg0dqh9ps8.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 618e722fa58e63d972a84f7.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 5fdd3ed76d3fe403.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 237e5ba403385a91.badsite.com' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 4341205e5d2bf39b.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 0dzbbh5pcgieca4j5nnq.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 4a71wjdo.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 9478b75f738de1e19e886.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 418a6ee34489a50.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 ya820z6hi.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 any5vchsjef2m48myhkh.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 f7e2e81940106d9a1a71.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 3d74d03168b29e.badsite.com' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 b797a7d2e40.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 8498b0f2ab07a210421c.phishing.cn' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 n27yf9c9ub60skb.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 25208796af698701995.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 590054c12abfa34b808.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 qz698cto3.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 245c69d17ab05a20c285.malware.org' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 c66cb05541.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 a549a03a9a3e913.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 6nizmzwfdbmbykj0ibd.tunnel.io' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 9cdd66f93078d3158934.tunnel.io' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 d50b1a0d63919e5e64347c5d.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 hrxfh0u58pk4mjkk.exfil.top' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 loygnoekssyioak0yvv.darkweb.biz' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 f0cc3d1280eb433cb6fb35a5.botnet.pw' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 y2vj37b222sf.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 f652yr255dijxa35ii3.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 qxa3e3u61mpzga8d3.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 71b87ed357125b73ad.c2server.ru' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 f5200a9dd6c14042df.malware.org' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 qv1ht5z8b.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 1002a4c115df.dga.tk' -Force
+Add-Content -Path $HostsPath -Value '0.0.0.0 3685674d7d73ad3808ff.badsite.com' -Force
+ipconfig /flushdns
+Write-Host '[+] Windows DNS cache flushed and hosts sinkhole updated!' -ForegroundColor Green
