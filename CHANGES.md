@@ -13,3 +13,10 @@
 - Rewrote README and the current Markdown report to remove unsupported benchmark and product claims. Historical binary reports and their generators are excluded from the repository; see README before submission.
 
 Known limits: no TCP stream reassembly or encrypted DNS inspection; small lexical reference and dictionary; synthetic benchmark only; no live-capture driver validation in this review. Configuration exports have not been integration-tested on external firewalls/resolvers.
+
+## Dashboard follow-up
+
+- Switched to a dark-only palette for app surfaces, charts, metrics and navigation, with the built-in theme switcher hidden.
+- Preserved domain-inspector evidence across navigation and download reruns; changed weights mark saved results as stale.
+- Added ranked host summaries with CSV export and a view of false positives and missed labeled queries.
+- Bounded timeline bucket counts for captures spanning long periods; cached analyses now expire and have an entry limit.

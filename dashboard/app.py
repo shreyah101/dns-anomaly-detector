@@ -1,5 +1,6 @@
 """Streamlit interface for inspecting DNS traffic and its supporting evidence."""
 import io
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -23,19 +24,14 @@ from src.mitigation import (generate_suricata_rules, generate_bind_rpz_zone,
     generate_pihole_blocklist, generate_iptables_script,
     generate_windows_firewall_script, generate_stix_bundle)
 
+from dashboard.theme import apply_dark_theme, style_axes, line_chart, BLUE, AMBER, BACKGROUND
+from src.traffic_summary import activity_timeline, host_summary
+
 st.set_page_config(page_title="DNS Traffic Analysis", layout="wide")
-st.markdown("""<style>
-.block-container {max-width: 1440px; padding-top: 2.2rem;}
-h1 {letter-spacing: -.045em; font-weight: 650 !important;}
-h2, h3 {letter-spacing: -.025em;}
-[data-testid="stMetric"] {border: 1px solid #d9e1e9; border-radius: 8px; padding: 18px;}
-[data-testid="stMetricLabel"] {font-size: .85rem;}
-[data-testid="stSidebar"] {border-right: 1px solid #d9e1e9;}
-.stButton > button, .stDownloadButton > button {border-radius: 6px;}
-</style>""", unsafe_allow_html=True)
+apply_dark_theme()
 
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=4, ttl=900)
 def analyze_bytes(content, kind, z, weights):
     if kind == "csv":
         frame = load_traffic(io.BytesIO(content))
@@ -92,7 +88,7 @@ if page == "Traffic analysis":
         st.caption("CSV requires timestamp, src_ip, domain. Optional: label, qtype, response_code. Timestamps may be ISO datetimes or Unix seconds.")
     if sum(weights.values()) == 0:
         st.error("Set at least one signal weight above zero.")
-    signature = (source, upload.name if upload else None, upload.getvalue() if upload else None, z, tuple(weights.items()))
+    signature = (source, upload.name if upload else None, hashlib.sha256(upload.getvalue()).hexdigest() if upload else None, z, tuple(weights.items()))
     if run:
         try:
             if source.startswith("Upload") and upload is None:
@@ -131,17 +127,21 @@ if page == "Traffic analysis":
             with left:
                 st.subheader("Score distribution")
                 fig, ax = plt.subplots(figsize=(6, 3))
-                ax.hist(scored.anomaly_score, bins=np.linspace(0, 1, 26), color="#326a9e", edgecolor="white")
-                ax.axvline(0.60, color="#b84b35", linestyle="--", label="Risk cutoff 0.60")
+                ax.hist(scored.anomaly_score, bins=np.linspace(0, 1, 26), color=BLUE, edgecolor=BACKGROUND)
+                ax.axvline(0.60, color=AMBER, linestyle="--", label="Risk cutoff 0.60")
                 ax.set(xlabel="Heuristic score", ylabel="Queries", xlim=(0, 1))
                 ax.legend(frameon=False)
+                style_axes(fig, ax)
                 fig.tight_layout()
                 st.pyplot(fig)
                 plt.close(fig)
             with right:
                 st.subheader("Traffic over time")
-                activity = scored.set_index("timestamp").resample("1min").agg(queries=("domain", "size"), flagged=("is_anomaly", "sum"))
-                st.line_chart(activity)
+                activity, bucket_seconds = activity_timeline(scored)
+                series = activity.rename_axis("timestamp").reset_index().melt(
+                    id_vars="timestamp", var_name="series", value_name="count")
+                line_chart(series, "timestamp:T", "count:Q", "Time (UTC)", "Queries", "series:N")
+                st.caption(f"Each time bucket spans {pd.Timedelta(seconds=bucket_seconds)}. Empty intervals contain zero queries.")
             st.caption(f"Batch outlier threshold: {scored.batch_threshold.iloc[0]:.3f}. "
                        f"{int(scored.is_statistical_outlier.sum())} queries exceed it. This is a relative diagnostic, separate from the risk cutoff.")
             st.download_button("Download all scored queries", scored.to_csv(index=False), "dns_analysis.csv", "text/csv")
@@ -168,6 +168,10 @@ if page == "Traffic analysis":
             else:
                 st.info("No queries match these filters. Queries below the cutoff can still be inspected by clearing Flagged only.")
         with hosts:
+            st.subheader("Clients to review")
+            summary = host_summary(scored)
+            st.dataframe(summary, hide_index=True, use_container_width=True)
+            st.download_button("Download host summary", summary.to_csv(index=False), "dns_hosts.csv", "text/csv")
             st.subheader("Timing by client and registered domain")
             st.dataframe(timing, hide_index=True, use_container_width=True)
             st.caption("At least three queries are required. Regular timing can also occur in legitimate software.")
@@ -193,7 +197,15 @@ if page == "Traffic analysis":
                     st.info("ROC AUC is undefined when only one ground-truth class is present.")
                 else:
                     st.write(f"ROC AUC: {metrics['auc']:.3f}")
-                    st.line_chart(pd.DataFrame({"False positive rate": metrics['roc_fpr'], "True positive rate": metrics['roc_tpr']}), x="False positive rate", y="True positive rate")
+                    line_chart(pd.DataFrame({"fpr": metrics['roc_fpr'], "tpr": metrics['roc_tpr']}),
+                               "fpr:Q", "tpr:Q", "False positive rate", "True positive rate")
+                with st.expander("Inspect classification errors"):
+                    labeled = scored[scored.label.isin(["benign", "malicious"])]
+                    errors = labeled[(labeled.label.eq("malicious") & ~labeled.is_anomaly) |
+                                     (labeled.label.eq("benign") & labeled.is_anomaly)]
+                    st.dataframe(errors[["domain", "src_ip", "label", "anomaly_score", "severity"]],
+                                 hide_index=True, use_container_width=True)
+                    st.caption(f"{len(errors)} classification errors in the available ground truth. These examples help identify detector limitations.")
         with exports:
             st.write("Review individual findings before using these configuration drafts. Downloads do not apply changes to the system.")
             domains = sorted(flagged.domain.unique().tolist())
@@ -226,11 +238,17 @@ elif page == "Domain inspector":
     if submit:
         try:
             row = inspect_domain(domain, beacon, weights)
-            if beacon:
-                st.info("Timing comes from a simulated history of 12 queries, not captured network activity.")
-            render_evidence(row)
+            st.session_state["inspection"] = (row, beacon, tuple(weights.items()))
         except (ValueError, OSError) as exc:
             st.error(str(exc))
+    if "inspection" in st.session_state:
+        row, simulated, saved_weights = st.session_state["inspection"]
+        if saved_weights != tuple(weights.items()):
+            st.warning("Signal weights changed. Inspect the domain again to update its saved result.")
+        if simulated:
+            st.info("Timing comes from a simulated history of 12 queries, not captured network activity.")
+        render_evidence(row)
+
 else:
     st.subheader("Method")
     st.markdown("""The detector combines seven heuristic signals: character entropy, bigram divergence from the bundled English reference, query timing regularity, a local TLD risk table, label length, encoding structure, and dictionary concatenation. CDN suffixes and known names provide context rather than blanket trust.

@@ -45,3 +45,16 @@ def test_sample_pcap_runs_in_dashboard():
     app.multiselect[0].set_value(app.multiselect[0].options[:1]).run()
     assert not app.exception
     assert app.code
+
+
+def test_domain_inspection_survives_navigation_and_setting_changes():
+    app = AppTest.from_file(APP, default_timeout=30).run()
+    app.sidebar.radio[0].set_value("Domain inspector").run()
+    app.button[0].click().run()
+    assert not app.exception
+    app.sidebar.radio[0].set_value("Method & project").run()
+    app.sidebar.radio[0].set_value("Domain inspector").run()
+    assert any("61646d" in heading.value for heading in app.subheader)
+    app.sidebar.number_input[0].set_value(0.30).run()
+    assert not app.exception
+    assert any("weights changed" in warning.value for warning in app.warning)
