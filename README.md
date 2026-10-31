@@ -80,6 +80,7 @@ The separate batch outlier diagnostic uses mean + z * standard deviation (`--z`)
 - `dashboard/app.py`: dark-only Streamlit application with explicit analysis runs, persistent results, filters, host rankings, classification-error inspection, and export previews. Timelines adapt their bucket size for long captures; charts use the same dark palette as the interface.
 - `tests/`: component and regression tests.
 - `Project_Report_BCSE308P.md`: current implementation report.
+- `screenshots/`: six captures of the running dark dashboard, covering CSV analysis, query evidence, PCAP host activity, evaluation, rule export and domain inspection.
 - Historical PDF/DOCX reports, slide decks, and report-generation scripts from earlier local drafts are excluded from this repository. Their hard-coded benchmark claims were not validated. Use the current Markdown report and measured CLI results for the final submission.
 
 ## Team

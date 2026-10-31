@@ -21,3 +21,6 @@ htmlcov/
 /build_standardized_reports.py
 /create_word_doc.py
 /generate_*.py
+
+# Local download bundle; individual screenshots are versioned
+/screenshots/*.zip
