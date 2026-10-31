@@ -1,0 +1,23 @@
+# Local environments and generated caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.deps/
+.tmp/
+.coverage
+htmlcov/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Historical report drafts retained only in the original local folder
+/*.pdf
+/*.docx
+/build_standardized_reports.py
+/create_word_doc.py
+/generate_*.py
