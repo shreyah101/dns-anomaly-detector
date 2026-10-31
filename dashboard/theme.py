@@ -59,7 +59,8 @@ def style_axes(fig, ax):
 
 def line_chart(frame, x, y, x_title, y_title, series=None):
     chart = alt.Chart(frame).mark_line(point=len(frame) < 3).encode(
-        x=alt.X(x, title=x_title), y=alt.Y(y, title=y_title),
+        x=alt.X(x, title=x_title, scale=alt.Scale(type="utc") if x.endswith(":T") else alt.Undefined),
+        y=alt.Y(y, title=y_title),
         tooltip=list(frame.columns),
     )
     if series:
